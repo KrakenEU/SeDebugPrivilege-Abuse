@@ -12,7 +12,7 @@ SeDebugPrivilege is a powerful privilege in Windows that allows a process to deb
 
 The tool leverages SeDebugPrivilege to:
 - Enable SeDebugPrivilege: The tool enables SeDebugPrivilege for the current process using the Windows API.
-- Open a Target Process: It opens a handle to a target process running as SYSTEM (e.g., lsass.exe or services.exe).
+- Open a Target Process: It opens a handle to a target process running as SYSTEM (e.g., explorer.exe or services.exe).
 - Manipulate the Target Process: Once a handle to the target process is obtained, the tool injects the loaded shellcode and Creates a Remote Thread using the VirtualAllocEx injection technique.
 
 #### Usage
